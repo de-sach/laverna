@@ -2,18 +2,17 @@
   "name": "laverna",
   "version": "0.7.51",
   "license": "MPL-2.0",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Laverna/laverna"
-  },
+  "repository": "https://github.com/de-sach/laverna",
   "scripts": {
     "start": "node ./server.js",
-    "electron": "NODE_ENV=dev electron .",
+    "electron": "SET NODE_ENV=development && node electron.js",
     "karma": "./node_modules/.bin/karma start",
-    "test:karma": "./node_modules/.bin/karma start --single-run"
+    "test:karma": "./node_modules/.bin/karma start --single-run",
+    "preinstall": "npx npm-force-resolutions"
   },
   "main": "electron.js",
   "dependencies": {
+    "bower": "^1.8.8",
     "chokidar": "^1.6.0",
     "electron-context-menu": "^0.6.0",
     "electron-window-state": "^3.0.3",
@@ -66,6 +65,9 @@
   },
   "optionalDependencies": {},
   "resolutions": {
-    "underscore": "~1.7.0"
-  }
+    "underscore": "~1.7.0",
+    "graceful-fs": "^4.2.4"
+  },
+  "description": "my laverna port",
+  "author": "de_sach"
 }
