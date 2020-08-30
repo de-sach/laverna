@@ -104,18 +104,12 @@ cd laverna
 
 ```bash
 $ npm install -g yarn
-$ npm install gulp
-$ npm install -g gulp
 ```
 
 #### 5. Install Laverna's dependencies:
 
 ```bash
-$ npm install
 $ yarn
-$ cd test
-$ bower install
-$ cd ..
 ```
 
 #### 6. Build minified version of Laverna:
