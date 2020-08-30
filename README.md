@@ -100,11 +100,10 @@ cd laverna
 
 **3. Ensure you have the node.js platform installed.** (See OS-specific instructions on their [website][8]).
 
-**4. Ensure you have the bower and gulp packages installed** (locally and globally):
+**4. Ensure you have the required packages installed** (locally and globally):
 
 ```bash
-$ npm install bower
-$ npm install -g bower
+$ npm install -g yarn
 $ npm install gulp
 $ npm install -g gulp
 ```
@@ -113,7 +112,7 @@ $ npm install -g gulp
 
 ```bash
 $ npm install
-$ bower install
+$ yarn
 $ cd test
 $ bower install
 $ cd ..
